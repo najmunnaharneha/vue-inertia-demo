@@ -8,7 +8,5 @@ defineOptions({
 
 <template>
     <Head :title="`| ${$page.component}`" />
-    <h1 class="text-3xl font-bold underline text-red-400">
-        {{ $page.props.auth.user }}
-    </h1>
+    <h1>Home Page</h1>
 </template>
