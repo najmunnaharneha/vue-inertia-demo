@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Models\User;
 
-Route::inertia('/', 'Home')->name('home');
+Route::inertia('/', 'Home', ['users' => User::paginate(5)])->name('home');
 
 Route::middleware('auth')->group(function () {
     Route::inertia('/dashboard', 'Dashboard')->name('dashboard');
