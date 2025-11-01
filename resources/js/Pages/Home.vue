@@ -1,9 +1,23 @@
 <script setup>
+import { ref, watch } from "vue";
+import { router } from "@inertiajs/vue3";
+import { debounce } from "lodash";
 import PaginationLinks from "./Components/PaginationLinks.vue";
 
-defineProps({
+const props = defineProps({
     users: Object,
+    searchTerm: String,
 });
+
+const search = ref(props.searchTerm);
+
+watch(
+    search,
+    debounce(
+        (q) => router.get("/", { search: q }, { preserveState: true }),
+        500
+    )
+);
 
 // Format date
 const getDate = (date) =>
@@ -17,7 +31,12 @@ const getDate = (date) =>
 <template>
     <Head :title="`| ${$page.component}`" />
 
-    <div>
+    <div class="mt-4">
+        <div class="flex justify-end mb-4">
+            <div class="w-1/4">
+                <input type="search" placeholder="Search" v-model="search" />
+            </div>
+        </div>
         <table>
             <thead>
                 <tr class="bg-slate-300">
