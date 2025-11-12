@@ -7,6 +7,7 @@ import PaginationLinks from "./Components/PaginationLinks.vue";
 const props = defineProps({
     users: Object,
     searchTerm: String,
+    can: Object,
 });
 
 const search = ref(props.searchTerm);
@@ -44,6 +45,7 @@ const getDate = (date) =>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Registration Date</th>
+                    <th v-if="can.delete_user" class="text-center">Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -62,6 +64,11 @@ const getDate = (date) =>
                     <td>{{ user.name }}</td>
                     <td>{{ user.email }}</td>
                     <td>{{ getDate(user.created_at) }}</td>
+                    <td v-if="can.delete_user" class="text-center">
+                        <button
+                            class="bg-red-500 w-6 h-6 rounded-full"
+                        ></button>
+                    </td>
                 </tr>
             </tbody>
         </table>
