@@ -1,61 +1,81 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+⚡ Vue 3 + Inertia.js + Laravel Project
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern full-stack web application built with Laravel, Inertia.js, and Vue 3 — combining Laravel’s backend power with Vue’s reactive frontend for a seamless SPA experience.
 
-## About Laravel
+✨ Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+🧭 Routes & Layouts – Organized structure with reusable Vue layouts
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+🧩 Link & Head Elements – Dynamic titles and meta tags
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+🔄 Progress Indicator – Smooth loading between pages
 
-## Learning Laravel
+⚙️ Shared Data – Easily pass data from Laravel to Vue
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+🧭 Named Routes (Ziggy) – Frontend-friendly Laravel routes
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+🔁 Scroll Preservation – Keep scroll position during navigation
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+🧾 Inertia Form Helper – Simplified form submission & validation
 
-## Laravel Sponsors
+💬 Reusable Text Input Component – Consistent input styling
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+🔐 Login / Logout – Inertia-powered authentication
 
-### Premium Partners
+📤 Post Links & File Uploads – Handle POST requests & uploads easily
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+📄 Pagination, Filter & Search – Smooth data handling and browsing
 
-## Contributing
+💡 Flash Messages – Quick success/error feedback
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+🛡️ Authorization – Role-based access & UI restrictions
 
-## Code of Conduct
+🛠 Tech Stack
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Frontend: Vue 3 + Inertia.js
 
-## Security Vulnerabilities
+Backend: Laravel 10+
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Styling: Tailwind CSS
 
-## License
+Routing: Laravel + Ziggy
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Build Tool: Vite
+
+🚀 Setup
+
+# Clone repository
+
+git clone https://github.com/najmunnaharneha/vue-inertia-demo.git
+cd vue-inertia-demo
+
+# Install dependencies
+
+composer install
+npm install
+
+# Setup environment
+
+cp .env.example .env
+php artisan key:generate
+
+# Run migrations
+
+php artisan migrate
+
+# Start development servers
+
+php artisan serve
+npm run dev
+
+## 📘 Documentation
+
+-   [Inertia.js](https://inertiajs.com/)
+-   [Vue 3](https://vuejs.org/)
+-   [Laravel](https://laravel.com/docs)
+
+👩‍💻 Author
+
+Najmun Nahar Neha
+💼 Junior Software Engineer @ 6amTech
+🌱 Focused on building elegant, interactive web applications with Vue & Laravel
