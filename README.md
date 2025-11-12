@@ -77,5 +77,7 @@ npm run dev
 👩‍💻 Author
 
 Najmun Nahar Neha
+
 💼 Junior Software Engineer @ 6amTech
+
 🌱 Focused on building elegant, interactive web applications with Vue & Laravel
